@@ -21,11 +21,23 @@
 <main>
 
     <section>
-        <h2>Kontakt</h2>
-        <p>Email: <a href="mailto:mvynnic1@stu.vistula.edu.pl">mvynnic1@stu.vistula.edu.pl</a></p>
-        <p>Telefon: <a href="tel:881469191">881469191</a></p>
-        <p>Miasto: Warszawa</p>
-    </section>
+    <h2>Kontakt</h2>
+    <p>Email: <a href="mailto:mvynnic1@stu.vistula.edu.pl">mvynnic1@stu.vistula.edu.pl</a></p>
+    <p>Telefon: <a href="tel:881469191">881469191</a></p>
+    <p>Miasto: Warszawa</p>
+
+    <h3>Formularz kontaktowy</h3>
+
+    <form id="contactForm" novalidate>
+        <input type="text" id="name" placeholder="Imię" required>
+        <input type="text" id="surname" placeholder="Nazwisko" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Wiadomość" required></textarea>
+        <button type="submit">Wyślij</button>
+    </form>
+
+    <p id="error"></p>
+</section>
 
     <section>
         <h2>O mnie</h2>
