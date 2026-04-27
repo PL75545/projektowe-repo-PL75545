@@ -56,3 +56,30 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     error.style.color = "green";
     error.textContent = "Formularz wysłany poprawnie!";
 });
+
+// FETCH JSON (NOWE ZADANIE)
+document.addEventListener("DOMContentLoaded", function () {
+
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+
+            let skillsList = document.getElementById("skills");
+            let projectsList = document.getElementById("projects");
+
+            data.skills.forEach(skill => {
+                let li = document.createElement("li");
+                li.textContent = skill;
+                skillsList.appendChild(li);
+            });
+
+            data.projects.forEach(project => {
+                let li = document.createElement("li");
+                li.textContent = project;
+                projectsList.appendChild(li);
+            });
+
+        })
+        .catch(error => console.log("Błąd JSON:", error));
+
+});
