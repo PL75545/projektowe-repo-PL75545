@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Mykola Vynnichyk - CV</title>
 
-    <!-- DOMYŚLNY MOTYW (red / green zmienia JS) -->
+    <!-- MOTYW -->
     <link id="theme" rel="stylesheet" href="red.css">
 </head>
 
@@ -14,30 +14,30 @@
     <h1>Mykola Vynnichyk ID studenta: 75545 - CV</h1>
 </header>
 
-<!-- KONTROLKI JS -->
+<!-- KONTROLKI -->
 <button onclick="changeTheme()">Zmień motyw</button>
 <button onclick="toggleProjekty()">Pokaż / Ukryj projekty</button>
 
 <main>
 
     <section>
-    <h2>Kontakt</h2>
-    <p>Email: <a href="mailto:mvynnic1@stu.vistula.edu.pl">mvynnic1@stu.vistula.edu.pl</a></p>
-    <p>Telefon: <a href="tel:881469191">881469191</a></p>
-    <p>Miasto: Warszawa</p>
+        <h2>Kontakt</h2>
+        <p>Email: <a href="mailto:mvynnic1@stu.vistula.edu.pl">mvynnic1@stu.vistula.edu.pl</a></p>
+        <p>Telefon: <a href="tel:881469191">881469191</a></p>
+        <p>Miasto: Warszawa</p>
 
-    <h3>Formularz kontaktowy</h3>
+        <h3>Formularz kontaktowy</h3>
 
-    <form id="contactForm" novalidate>
-        <input type="text" id="name" placeholder="Imię" required>
-        <input type="text" id="surname" placeholder="Nazwisko" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <textarea id="message" placeholder="Wiadomość" required></textarea>
-        <button type="submit">Wyślij</button>
-    </form>
+        <form id="contactForm" novalidate>
+            <input type="text" id="name" placeholder="Imię" required>
+            <input type="text" id="surname" placeholder="Nazwisko" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Wiadomość" required></textarea>
+            <button type="submit">Wyślij</button>
+        </form>
 
-    <p id="error"></p>
-</section>
+        <p id="error"></p>
+    </section>
 
     <section>
         <h2>O mnie</h2>
@@ -47,15 +47,10 @@
         </p>
     </section>
 
+    
     <section>
         <h2>Umiejętności</h2>
-        <ul>
-            <li>C# - programowanie aplikacji</li>
-            <li>SQL - podstawy baz danych</li>
-            <li>HTML - tworzenie stron internetowych</li>
-            <li>Praca w zespole</li>
-            <li>Język angielski</li>
-        </ul>
+        <ul id="skills"></ul>
     </section>
 
     <section>
@@ -63,7 +58,7 @@
 
         <article>
             <h3>Projekt uczelniany w C#</h3>
-            <p>Aplikacja konsolowa napisana w C#.</p>
+            <p>Stworzenie aplikacji konsolowej w C# w ramach zajęć.</p>
         </article>
 
         <article>
@@ -72,13 +67,10 @@
         </article>
     </section>
 
+    
     <section id="projekty">
         <h2>Projekty</h2>
-        <ul>
-            <li>Kalkulator w C# - użycie zmiennych i pętli</li>
-            <li>Automat vendingowy - symulacja systemu sprzedaży</li>
-            <li>Analizator funkcji F(x) - Windows Forms</li>
-        </ul>
+        <ul id="projects"></ul>
     </section>
 
     <section>
@@ -89,7 +81,7 @@
     <section>
         <h2>Linki</h2>
         <p>
-            <a href="https://github.com/PL75545/projektowe-repo-PL75545" target="_blank">GitHub</a>
+            <a href="https://github.com/PL75545/CV-PL75545.git" target="_blank">GitHub</a>
         </p>
         <p>
             <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
@@ -107,7 +99,6 @@
     <p>2026</p>
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>
